@@ -49,7 +49,7 @@ const images = [
 // Отримуємо елемент галереї
 const gallery = document.querySelector('.gallery');
 
-// Створюємо HTML для кожного зображення і додаємо до галереї
+// Створюємо HTML розмітку
 images.forEach(image => {
     const listItem = document.createElement('li');
     listItem.classList.add('gallery-item');

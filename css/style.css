@@ -15,3 +15,33 @@
     object-fit: cover; 
     display: block;
 }
+
+ body{
+    background-color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+.menu button {
+    background-color: #efc5f3;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu h1 {
+    color: white;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}

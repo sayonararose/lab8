@@ -63,6 +63,7 @@ images.forEach(image => {
     gallery.appendChild(listItem);
 });
 
+
 // Делегування події на ul.gallery
 gallery.addEventListener('click', function(event) {
     // Перевірка, чи клікнули на зображення
@@ -71,4 +72,9 @@ gallery.addEventListener('click', function(event) {
         const originalImageLink = event.target.parentElement.href;
         console.log('Велике зображення:', originalImageLink);
     }
+});
+
+document.getElementById('openFormButton').addEventListener('click', () => {
+    const formLink = "./2-form.html"; 
+    window.open(formLink, '_blank'); 
 });

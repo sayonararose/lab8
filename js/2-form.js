@@ -1,7 +1,5 @@
-// Об'єкт для зберігання даних форми
+//Зберігання даних форми
 const formData = { email: "", message: "" };
-
-// Отримуємо форму
 const form = document.querySelector('.feedback-form');
 
 // Завантажуємо дані із локального сховища при завантаженні сторінки
@@ -14,7 +12,7 @@ if (savedData) {
     form.message.value = formData.message;
 }
 
-// Відстежуємо зміни у формах за допомогою події input
+// Відстежуємо зміни у формах 
 form.addEventListener('input', (e) => {
     formData[e.target.name] = e.target.value;
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
